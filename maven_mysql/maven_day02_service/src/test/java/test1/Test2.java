@@ -20,4 +20,7 @@ public class Test2 {
     public static void main(String[] args) {
         System.out.println("hello git");
     }
+    public static void method(){
+        int i=1;
+    }
 }
