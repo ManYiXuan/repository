@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.itheima.dao.UserDao">
+    <!--<resultMap id="userMap" type="com.itheima.domain.User">-->
+        <!--<id property="userId" column="id"></id>-->
+        <!--<result property="userName" column="username"></result>-->
+        <!--<result property="userAddress" column="address"></result>-->
+        <!--<result property="userSex" column="sex"></result>-->
+        <!--<result property="userBirthday" column="birthday"></result>-->
+    <!--</resultMap>-->
+    <!--<select id="findAll" resultType="com.itheima.domain.User">-->
+        <!--select * from user;-->
+    <!--</select>-->
+
+    <!--<insert id="addUser" parameterType="com.itheima.domain.User">-->
+        <!--<selectKey keyProperty="id" keyColumn="id" order="AFTER" resultType="int">-->
+            <!--select last_insert_id();-->
+        <!--</selectKey>-->
+        <!--insert into user(username,address,sex,birthday) values(#{username},#{address},#{sex},#{birthday});-->
+    <!--</insert>-->
+    <select id="findOne" parameterType="int" resultType="user">
+        select id as userId,username as userName, sex as userSex, address as userAddress, birthday as userBirthday from user where id=#{userId};
+    </select>
+    <!--<select id="findByName" parameterType="string" resultMap="userMap">-->
+        <!--select * from user where username like #{name};-->
+        <!--&lt;!&ndash;select * from user where username like '%${value}%';&ndash;&gt;-->
+    <!--</select>-->
+    <!--<update id="updateUser" parameterType="com.itheima.domain.User">-->
+        <!--update user set username=#{username},address=#{address},sex=#{sex},birthday=#{birthday} where id=#{id};-->
+    <!--</update>-->
+    <!--<delete id="deleteUser" parameterType="int">-->
+        <!--delete from user where id=#{id};-->
+    <!--</delete>-->
+    <!--<insert id="saveUser" parameterType="com.itheima.domain.QueryVo" >-->
+        <!--insert into user(username,address,sex,birthday) values(#{user.username},#{user.address},#{user.sex},#{user.birthday});-->
+    <!--</insert>-->
+    <!--<select id="findTotal" resultType="int">-->
+        <!--select count(*) from user;-->
+    <!--</select>-->
+</mapper>

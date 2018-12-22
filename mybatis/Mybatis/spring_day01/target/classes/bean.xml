@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+    <!--<bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">-->
+        <!--<constructor-arg name="name" value="张三"></constructor-arg>-->
+    <!--</bean>-->
+    <!--<bean id="abc" class="com.itheima.domain.Abc" factory-method="getAccountDao"></bean>-->
+    <!--<bean id="accountDao" factory-bean="abc" factory-method="getAccountDao"></bean>-->
+    <!--<bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">-->
+        <!--<property name="name" value="张三"></property>-->
+        <!--<property name="age" value="18"></property>-->
+    <!--</bean>-->
+    <!--<bean id="account" class="com.itheima.domain.Account"></bean>-->
+
+
+
+    <!--<bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>-->
+    <!--<bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">-->
+        <!--<constructor-arg name="accountDao" ref="accountDao"></constructor-arg>-->
+    <!--</bean>-->
+
+
+    <!--<bean id="abc" class="com.itheima.domain.Abc">-->
+        <!--<constructor-arg name="is" value="李四"></constructor-arg>-->
+    <!--</bean>-->
+    <!--<bean id="abc" class="com.itheima.domain.Abc"></bean>-->
+    <bean id="string" class="com.itheima.domain.Abc" factory-method="getStr">
+        <constructor-arg name="i" value="10"></constructor-arg>
+    </bean>
+</beans>

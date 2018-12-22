@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://E:/黑马培训/就业班/框架/maven_day02/代码/maven_day02_parent/maven_day02_web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="E:/黑马培训/就业班/框架/maven_day02/代码/maven_day02_parent/maven_day02_dao/pom.xml" />
+        <option value="E:/黑马培训/就业班/框架/maven_day02/代码/maven_day02_parent/maven_day02_service/pom.xml" />
+        <option value="E:/黑马培训/就业班/框架/maven_day02/代码/maven_day02_parent/maven_day02_web/pom.xml" />
+        <option value="E:/黑马培训/就业班/框架/maven_day02/代码/maven_day02_parent/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
